@@ -1,0 +1,25 @@
+{
+  "name": "explain-my-code-ai",
+  "version": "1.0.0",
+  "description": "AI-powered code explanation platform using Google Gemini API",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run start --prefix server",
+    "build": "npm run build --prefix client",
+    "test": "npm run test --prefix server",
+    "lint": "npm run lint --prefix server && npm run lint --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "ai",
+    "gemini",
+    "code-explanation",
+    "developer-tools",
+    "react",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT"
+}
